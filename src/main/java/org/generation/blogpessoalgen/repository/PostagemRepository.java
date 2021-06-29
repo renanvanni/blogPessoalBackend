@@ -14,7 +14,7 @@ public interface PostagemRepository extends JpaRepository<Postagem, Long>{//post
 
 	public List<Postagem> findAllByTitleContainingIgnoreCase(String title);//containing serve como o like e tráz tudo o que essa variável title tem no banco de dados/IgnoreCase serve para não ligar se as letras são maiúsculas ou minusculas
 	
-	public Optional <Postagem> findFirstByTituloIgnoreCase(String titulo);
+	public Optional <Postagem> findFirstByTitleIgnoreCase(String title);
 	
 	/**
 	 * 
